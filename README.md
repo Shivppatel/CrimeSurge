@@ -4,7 +4,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -45,11 +44,11 @@
 
 ## About The Project
 
-Goals
+### Goals
     - Improve the visualization of crime in Prince George's County
     - Highlight crime hotspots, what crimes occur the most and where
     
-How Our System Solves the Problem
+### How Our System Solves the Problem
     - Creates an immediate data visualization of the hotspots so people can avoid them and activists and politicians can focus efforts in these areas
 
 [![Product Name Screen Shot][product-screenshot]](https://pgc-crime-map.herokuapp.com/)
