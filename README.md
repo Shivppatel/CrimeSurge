@@ -1,5 +1,4 @@
 # PGC-Crime-Map
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -12,7 +11,7 @@
     <img src="images/logo1.jpg" alt="Logo" width="500" height="250">
   </a>
 
-  <h3 align="center">PGC-Crime-Map</h3>
+  <h3 align="center">Prince George's County Crime Map</h3>
 
   <p align="center">
     Data visualization of the crime hotspots in Prince George's County
@@ -43,6 +42,9 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+The Prince George's County Crime Map application hopes to display what types of crimes occur the most and where in an effort to increase personal safety and affect policy to lower crime rates. 
+In an ideal scenario for individuals, one would be able to pull up the crime map before or after leaving their house, place of work, or another area and view where crimes happened the most in close proximity to them. This would allow individuals to avoid areas of high crime to avoid theft, injury, or worse. Communities as a whole may be able to use the app to draft their own community safety guidelines and recommendations on personal protection. 
+On a political scale, the app is meant to give public officials an idea of what crimes occur the most and where to inform their decisions on crime reduction and community safety.
 
 ### Goals
     - Improve the visualization of crime in Prince George's County
@@ -50,6 +52,9 @@
     
 ### How Our System Solves the Problem
     - Creates an immediate data visualization of the hotspots so people can avoid them and activists and politicians can focus efforts in these areas
+
+### Target Browsers
+    - Our main targets are iOS devices such as Macbooks and iPhones.
 
 [![Product Name Screen Shot][product-screenshot]](https://pgc-crime-map.herokuapp.com/)
 
