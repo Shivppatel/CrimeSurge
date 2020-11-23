@@ -1,127 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-  <title>PGC-Crime-Map</title>
-  <link href="styles.css" type="text/css" rel="stylesheet" />
-  <link rel="icon" type="image/png" 
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" 
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIUZ9jM2yEU4RXSCYP7hW2sQ2IyKjUuuCd4Q&usqp=CAU">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<body>
-    <div class="wrapper">
-        <div class="header">
-            <h1 element="h1">Prince George's County Crime Map</h1>
-        </div>
-            <div class="navbar">
-                
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>PGC-Crime-Map</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-                <!-- nav buttons -->
-                <nav element = "nav">
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-                    <ul>
-                    <li><span>Home</span></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Crime Map</a></li>
-                    <li><a href="#">Statistics</a></li>
-                    </ul>
-
-                    <!-- 
-                        <span>Home</span>
-                    <a href="#">About</a>
-                    <a href="#">Documentation</a>
-                    <a href="#">Crime Map</a>
-                    <a href="#">Statistics</a>
-                    -->
-            
-                </nav>
-                <!-- nav buttons -->
-
-            </div>
-        
-
-        <!-- Main body of index page -->
-        <!-- Section 1 (Welcome!)-->
-        <div class = "welcome-block">
-            <h2 class="flex-outer">Welcome!</h2>
-        </div>
-
-        <div class = "welcome">
-
-            <p>Welcome to the Prince George’s County Crime Tracker/Hotspot mapper. Here we document the locations where crime is concentrated most and represent it on the map of the county and in a neat bar chart that separates crime rates by street (or some other location like zipcode).</p>
-
-    
-      
-        </div>
-        <!-- Section 1 -->
-
-
-
-        <!-- div Main -->
-
-        <!-- Section 2 (Did You Know?)
-        class used to be "article"-->
-        <div class = "row">
-            <!-- <div class = "article-block">
-                <h2 class = "flex-outer">Did You Know?</h2>
-            </div>-->
-            <div class = "column">
-    
-                <h2>Did You Know?</h2>
-        
-                <p>This is example text for the DYK part of this website. It will be updated later depending on the research in and outside the dataset, and may even be randomized if possible.</p>
-        
-            
-              
-                </div>
-            <!-- Section 2 -->
-    
-    
-    
-            <!-- Section 3  (Map of PG County)
-            class used to be "aside" -->
-    
-            <!-- Aside -->
-            <div class = "column">
-    
-                <h2>Prince George's County Map</h2>
-        
-                <a href="PG_County_Map.gif"><img src="PG_County_Map.gif" alt="A map of PG County." width = "200" height = "265"></a>
-            
-            </div>
-            <!-- Aside -->
-    
-    
-            <!-- Section 3 -->
-    
-    
-          
-      
-    
-        </div>
-        <!-- div Main -->
-
-    </div>
-
-    <!-- Main body of index page -->
-
-
-
-
-          <!-- Footer of pages (copyright) -->
-          
-          <div class = "footer">
-            <p>Copyright/Credits/Contact Information</p>
-            
-          </div>
-
-          <!-- Footer -->
-
-    <script src="script.js"></script>
-
-</body>
-
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
