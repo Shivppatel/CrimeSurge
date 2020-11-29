@@ -1,10 +1,10 @@
 import React from 'react'
-import {StatisticsContainer} from './StatisticsElements'
+import {StatisticsContainer, StatisticsTitle} from './StatisticsElements'
 
 const Statistics = () => {
     return (
         <StatisticsContainer id="statistics">
-            <h1>Statistics</h1>
+            <StatisticsTitle>Statistics</StatisticsTitle>
         </StatisticsContainer>
     )
 }
