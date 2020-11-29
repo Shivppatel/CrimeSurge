@@ -10,22 +10,25 @@ export const FooterContainer = styled.div`
   justify-content: center;
   padding: 20px;
   color: #dae0e2;
+  font-size: 1rem;
 `;
 
 export const FooterLinksWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
+  margin: 0 auto;
+  max-width: 760px;
 `;
+
 export const FooterLinkTitle = styled.p`
-  margin-top: 10px;
   font-weight: lighter;
 `;
-export const FooterLink = styled(LinkS)` 
+
+export const FooterLink = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
+  padding: 10px 10px;
   cursor: pointer;
 `;
