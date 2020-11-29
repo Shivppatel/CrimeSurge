@@ -60,26 +60,3 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
   }
 `;
-export const SideBtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-export const SidebarRoute = styled(LinkR)`
-  border-radius: 50px;
-  background: #0a79df;
-  white-space: nowrap;
-  padding: 16px 64px;
-  color: white;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #0a79df;
-  }
-`;

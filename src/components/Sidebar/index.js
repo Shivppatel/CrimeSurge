@@ -6,8 +6,6 @@ import {
   SidebarMenu,
   SidebarWrapper,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -34,9 +32,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             Crime Map
           </SidebarLink>
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
-        </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );

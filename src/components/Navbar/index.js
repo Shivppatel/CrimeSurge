@@ -9,8 +9,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -24,7 +22,13 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/">Home</NavLinks>
+              <NavLinks to="home">Home</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="map">Crime Map</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="statistics">Statistics</NavLinks>
@@ -32,13 +36,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks to="documentation">Documentation</NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="about">About</NavLinks>
-            </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/map">View Crime Map</NavBtnLink>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
