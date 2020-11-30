@@ -67,7 +67,6 @@ export const AboutTitle = styled.h1`
 export const ContentTitle = styled.h2`
     color: #0A79DF;
     font-size: 20px;
-    text-align: ce;
     max-width: 380px;
 
     @media screen and (max-width: 768px){

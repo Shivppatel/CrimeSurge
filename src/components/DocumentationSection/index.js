@@ -1,10 +1,15 @@
 import React from 'react'
-import {DocContainer} from './DocumentationElements'
+import {DocContainer, DocTitle, DocWrapper, DocContent} from './DocumentationElements'
 
 const Documentation = () => {
     return (
         <DocContainer id="documentation">
-            <h1>Documentation</h1>
+            <DocTitle>Documentation</DocTitle>
+            <DocWrapper>
+                <DocContent>
+                    <h1>Documentation will go here</h1>
+                </DocContent>
+            </DocWrapper>
         </DocContainer>
     )
 }
