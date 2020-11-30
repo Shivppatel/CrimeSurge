@@ -9,6 +9,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  Abbr,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -22,19 +23,19 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="home">Home</NavLinks>
+              <NavLinks to="home"><Abbr title ="Home">Home</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about"><Abbr title = "About">About</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="map">Crime Map</NavLinks>
+              <NavLinks to="map"><Abbr title = "Crime Map">Crime Map</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="statistics">Statistics</NavLinks>
+              <NavLinks to="statistics"><Abbr title = "Statistics">Statistics</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="documentation">Documentation</NavLinks>
+              <NavLinks to="documentation"><Abbr title = "Documentation">Documentation</Abbr></NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
