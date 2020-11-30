@@ -33,7 +33,7 @@ export const DocContent = styled.div`
 
 export const DocTitle = styled.h2`
 margin-bottom: 40px;
-    color: #0A79DF;
+    color: white;
     font-size: 32px;
     max-width: 480px;
     text-align:center;
