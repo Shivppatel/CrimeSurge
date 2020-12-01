@@ -82,5 +82,5 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 export const Abbr = styled.abbr`
-  text-decoration: none
+  text-decoration: none 
   `;
