@@ -7,9 +7,10 @@ export const MapContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   height: 100vh;
+  width: 100vw;
   position: relative;
   z-index: 1;
-  background: #2c3335;
+  background: #616c6f;
   color: white;
 `;
 
@@ -25,9 +26,17 @@ export const MapWrapper = styled.div`
 `;
 
 export const MapContent = styled.div`
-    height: 768px;
-    width: 768px;
-    background:green;
+ display: flex;
+    flex-direction:column;
+    margin-right:20px;
+    margin-left: 20px;
+    padding:20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 90vw;
+    box-shadow: -5px 6px #A4B0BD;
+    min-height: 300px;
+    min-width: 300px;
 `;
 
 export const ContentTitle = styled.h2`

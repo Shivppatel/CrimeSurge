@@ -9,7 +9,7 @@ export const DocContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  background: #2C3335;
+  background: #616c6f;
   color: white;
   overflow-y:hidden;
 `;
@@ -26,9 +26,15 @@ export const DocWrapper = styled.div`
 `;
 
 export const DocContent = styled.div`
-    height: 768px;
-    width: 768px;
-    background:green;
+    min-height: 300px;
+    min-width: 300px;
+    margin-right:20px;
+    margin-left: 20px;
+    padding:20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 90vw;
+    box-shadow: -5px 6px #A4B0BD;
 `;
 
 export const DocTitle = styled.h2`
