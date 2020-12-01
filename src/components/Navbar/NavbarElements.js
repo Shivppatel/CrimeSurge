@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
+
+
 export const Nav = styled.nav`
   background: #0A79DF;
   height: 80px;
@@ -79,3 +81,6 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #0a79df;
   }
 `;
+export const Abbr = styled.abbr`
+  text-decoration: none 
+  `;
