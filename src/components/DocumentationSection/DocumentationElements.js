@@ -9,7 +9,7 @@ export const DocContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  background: #616c6f;
+  background: #DAE0E2;
   color: white;
   overflow-y:hidden;
 `;
@@ -27,20 +27,23 @@ export const DocWrapper = styled.div`
 
 export const IntroductionContent = styled.div`
     min-height: 300px;
-    min-width: 300px;
+    
+    max-width:100px;
     margin-right:20px;
     margin-left: 20px;
+    margin-bottom: 50px;
     padding:20px;
     background: white;
     border-radius: 10px;
-    max-width: 90vw;
+    max-width: 50vw;
     box-shadow: -5px 6px #A4B0BD;
 `;
 export const AccountContent = styled.div`
     min-height: 300px;
-    min-width: 300px;
+    min-width: 400px;
     margin-right:20px;
     margin-left: 20px;
+    margin-bottom: 50px;
     padding:20px;
     background: white;
     border-radius: 10px;
@@ -49,9 +52,10 @@ export const AccountContent = styled.div`
 `;
 export const VisualContent = styled.div`
     min-height: 300px;
-    min-width: 300px;
+    min-width: 400px;
     margin-right:20px;
     margin-left: 20px;
+    margin-bottom;
     padding:20px;
     background: white;
     border-radius: 10px;
@@ -60,7 +64,7 @@ export const VisualContent = styled.div`
 `;
 export const VisualExportContent = styled.div`
     min-height: 300px;
-    min-width: 300px;
+    min-width: 400px;
     margin-right:20px;
     margin-left: 20px;
     padding:20px;
@@ -69,10 +73,31 @@ export const VisualExportContent = styled.div`
     max-width: 90vw;
     box-shadow: -5px 6px #A4B0BD;
 `;
-
+export const ScopeContent = styled.div`
+    min-height: 300px;
+    min-width: 400px;
+    margin-right:20px;
+    margin-left: 20px;
+    padding:20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 90vw;
+    box-shadow: -5px 6px #A4B0BD;
+`;
+export const CLContent = styled.div`
+    min-height: 300px;
+    min-width: 400px;
+    margin-right:20px;
+    margin-left: 20px;
+    padding:20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 90vw;
+    box-shadow: -5px 6px #A4B0BD;
+`;
 export const DocTitle = styled.h2`
 margin-bottom: 40px;
-    color: white;
+    color: #0A79DF;
     font-size: 32px;
     max-width: 480px;
     text-align:center;
