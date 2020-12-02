@@ -28,14 +28,14 @@ export const DocWrapper = styled.div`
 export const IntroductionContent = styled.div`
     min-height: 300px;
     
-    max-width:100px;
+    min-width:400px;
     margin-right:20px;
     margin-left: 20px;
     margin-bottom: 50px;
     padding:20px;
     background: white;
     border-radius: 10px;
-    max-width: 50vw;
+    max-width: 90vw;
     box-shadow: -5px 6px #A4B0BD;
 `;
 export const AccountContent = styled.div`
