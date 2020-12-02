@@ -10,7 +10,7 @@ const Documentation = () => {
                 <IntroductionContent>
                     <ContentItem>
                         <ContentTitle>Introduction</ContentTitle>
-                        <h1>Documentation will go here</h1>
+                    
                     </ContentItem>
                 </IntroductionContent>
 
