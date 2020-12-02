@@ -69,17 +69,7 @@ export const VisualExportContent = styled.div`
     max-width: 90vw;
     box-shadow: -5px 6px #A4B0BD;
 `;
-export const VisualExportContent = styled.div`
-    min-height: 300px;
-    min-width: 300px;
-    margin-right:20px;
-    margin-left: 20px;
-    padding:20px;
-    background: white;
-    border-radius: 10px;
-    max-width: 90vw;
-    box-shadow: -5px 6px #A4B0BD;
-`;
+
 export const DocTitle = styled.h2`
 margin-bottom: 40px;
     color: white;
