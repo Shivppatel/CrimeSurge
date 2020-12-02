@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContentItem, ContentTitle } from '../AboutSection/AboutElements'
-import {DocContainer, DocTitle, DocWrapper, IntroductionContent, AccountContent, VisualContent, VisualExportContent} from './DocumentationElements'
+import {DocContainer, DocTitle, DocWrapper, IntroductionContent, AccountContent, VisualContent, VisualExportContent, ScopeContent, CLContent} from './DocumentationElements'
 
 const Documentation = () => {
     return (
@@ -31,6 +31,18 @@ const Documentation = () => {
                         <ContentTitle>Exporting Visualations</ContentTitle>
                     </ContentItem>
                 </VisualExportContent>
+
+                <ScopeContent>
+                    <ContentItem>
+                        <ContentTitle>Scope of The Data Provider</ContentTitle>
+                    </ContentItem>
+                </ScopeContent>
+
+                <CLContent>
+                    <ContentItem>
+                        <ContentTitle>Copyright and Legal</ContentTitle>
+                    </ContentItem>
+                </CLContent>
             </DocWrapper>
         </DocContainer>
     )
