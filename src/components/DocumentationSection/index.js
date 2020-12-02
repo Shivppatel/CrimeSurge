@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContentItem, ContentTitle } from '../AboutSection/AboutElements'
-import {DocContainer, DocTitle, DocWrapper, DocContent} from './DocumentationElements'
+import {DocContainer, DocTitle, DocWrapper, IntroductionContent, AccountContent, VisualContent, VisualExportContent} from './DocumentationElements'
 
 const Documentation = () => {
     return (
