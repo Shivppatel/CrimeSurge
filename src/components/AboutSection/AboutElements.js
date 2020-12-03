@@ -50,19 +50,13 @@ export const ContentItem = styled.div`
     }
 `;
 export const AboutTitle = styled.h1`
-    margin-bottom: 40px;
     color: #0A79DF;
-    font-size: 32px;
-    max-width: 480px;
-    text-align:center;
+    margin-bottom: 64px;
+    font-size: 2.5rem;
 
-    @media screen and (max-width: 768px){
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    @media screen and (max-width: 480px){
-        font-size: 24px;
-    }
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 export const ContentTitle = styled.h2`
     color: #0A79DF;

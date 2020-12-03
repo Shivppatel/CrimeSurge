@@ -18,21 +18,27 @@ const Documentation = () => {
     <DocContainer id="documentation">
       <DocH1>Documentation</DocH1>
       <DocWrapper>
-        <DocCard>
-          <DocIcon src={Icon1} />
-          <DocH2>View Source Code</DocH2>
-          <DocP>Stuff will go here</DocP>
-        </DocCard>
+      <a href="https://www.google.com">
         <DocCard>
           <DocIcon src={Icon2} />
           <DocH2>User Manual</DocH2>
-          <DocP>Manual will go here</DocP>
+          <DocP>Need help using our application? Don't worry we got docs for that!</DocP>
         </DocCard>
+        </a>
+        <a href="https://github.com/Shivppatel/PGC-Crime-Map" target="_blank">
+        <DocCard>
+          <DocIcon src={Icon1} />
+          <DocH2>View Source Code</DocH2>
+          <DocP>Want to see the code? Don't worry we got a repo for that!</DocP>
+        </DocCard>
+        </a>
+        <a href="https://www.google.com">
         <DocCard>
           <DocIcon src={Icon3} />
           <DocH2>Developer Manual</DocH2>
-          <DocP>Manual will go here</DocP>
+          <DocP>Need help using our API? Don't worry we got docs for that! </DocP>
         </DocCard>
+        </a>
       </DocWrapper>
     </DocContainer>
   );

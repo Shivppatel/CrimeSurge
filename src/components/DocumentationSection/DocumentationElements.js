@@ -40,12 +40,12 @@ export const DocCard = styled.div`
   justify-content:flex-start;
   align-items: center;
   border-radius: 10px;
-  max-height: 360px;
   padding: 30px;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 1px 3px #a4b0bd;
   transition: all 0.2s ease-in-out;
+  min-height: 400px;
 
   &:hover {
     transform: scale(1.02);
