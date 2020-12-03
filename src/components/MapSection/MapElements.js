@@ -19,7 +19,7 @@ export const MapWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
   @media screen and (max-width: 768px) {
     height: 70vh;
   }

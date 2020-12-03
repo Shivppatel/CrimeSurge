@@ -23,6 +23,7 @@ export const DocWrapper = styled.div`
   justify-content:center;
   grid-gap: 16px;
   padding: 0 50px;
+  height: 40vh;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -31,6 +32,7 @@ export const DocWrapper = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
+    height: 70vh;
   }
 `;
 
