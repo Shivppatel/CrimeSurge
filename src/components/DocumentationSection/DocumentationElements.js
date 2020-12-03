@@ -10,45 +10,73 @@ export const DocContainer = styled.div`
   position: relative;
   z-index: 1;
   background: #616c6f;
-  color: white;
-  overflow-y:hidden;
+  color: black;
+  overflow-y: hidden;
 `;
 
 export const DocWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 50vh;
+  max-width: 1000px;
+  margin: 25px auto; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content:center;
+  grid-gap: 16px;
+  padding: 0 50px;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media screen and (max-width: 768px) {
-    height: 70vh;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
   }
 `;
 
-export const DocContent = styled.div`
-    min-height: 300px;
-    min-width: 300px;
-    margin-right:20px;
-    margin-left: 20px;
-    padding:20px;
-    background: white;
-    border-radius: 10px;
-    max-width: 90vw;
-    box-shadow: -5px 6px #A4B0BD;
+export const DocCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  border-radius: 10px;
+  max-height: 360px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px #a4b0bd;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
 `;
 
-export const DocTitle = styled.h2`
-margin-bottom: 40px;
-    color: white;
-    font-size: 32px;
-    max-width: 480px;
-    text-align:center;
+export const DocIcon = styled.img`
+  height: 260px;
+  width: 260px;
+  margin-bottom: 10px;
+`
 
-    @media screen and (max-width: 768px){
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    @media screen and (max-width: 480px){
-        font-size: 24px;
-    }
+export const DocH1 = styled.h1`
+  margin-bottom: 64px;
+  color: white;
+  font-size: 2.5rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
+
+export const DocH2 = styled.h2`
+  margin-bottom: 10px;
+  font-size: 1rem;
+`;
+
+export const DocP = styled.p`
+  font-size: 1rem;
+  text-align: center;
+`;
+
