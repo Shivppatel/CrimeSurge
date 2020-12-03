@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { FaBars } from "react-icons/fa";
-
+import {animateScroll as scroll} from 'react-scroll';
 import {
   Nav,
   NavbarContainer,
@@ -27,29 +27,42 @@ const Navbar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav);
   }, [])
 ;  
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">CrimeSurge</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>CrimeSurge</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-            <NavLinks to="home"><Abbr title ="Home">Home</Abbr></NavLinks>
+            <NavLinks to="home"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+            ><Abbr title ="Home">Home</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about"><Abbr title = "About">About</Abbr></NavLinks>
+              <NavLinks to="about"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              ><Abbr title = "About">About</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="map"><Abbr title = "Crime Map">Crime Map</Abbr></NavLinks>
+              <NavLinks to="map"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              ><Abbr title = "Crime Map">Crime Map</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="statistics"><Abbr title = "Statistics">Statistics</Abbr></NavLinks>
+              <NavLinks to="statistics"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              ><Abbr title = "Statistics">Statistics</Abbr></NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="documentation"><Abbr title = "Documentation">Documentation</Abbr></NavLinks>
+              <NavLinks to="documentation"
+              smooth={true} duration={500} spy={true} exact='true' offset={-80}
+              ><Abbr title = "Documentation">Documentation</Abbr></NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
