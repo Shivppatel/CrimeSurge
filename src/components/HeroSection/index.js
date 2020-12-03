@@ -28,8 +28,7 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Visualize Local Crime </HeroH1>
         <HeroP>
-          This is example text for the DYK part of this website. It will be
-          updated later depending on the research in and outside the dataset
+        Created in an effort to increase personal safety and affect policy to lower crime rates.
         </HeroP>
         <HeroBtnWrapper>
           <Button
