@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const MapContainer = styled.div`
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   position: relative;
   z-index: 1;
-  background: #616c6f;
 `;
 
 export const ContentTitle = styled.h1`

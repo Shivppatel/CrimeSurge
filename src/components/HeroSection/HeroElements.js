@@ -55,6 +55,8 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto
 `;
 export const HeroH1 = styled.h1`
   color: white;
