@@ -1,5 +1,5 @@
 import React from 'react'
-import {MapContainer, MapWrapper, MapContent, ContentTitle} from './MapElements'
+import {MapContainer, ContentTitle} from './MapElements'
 
 class Map extends React.Component{
     constructor(props){
@@ -33,12 +33,7 @@ class Map extends React.Component{
         const crimeList = this.state.crimeList;
         return(
         <MapContainer id="map">
-            <ContentTitle>Prince George County Map</ContentTitle>
-            <MapWrapper>
-                <MapContent>
-                    {console.log(crimeList)}
-                </MapContent>
-            </MapWrapper>
+
         </MapContainer>
         )}
 }
