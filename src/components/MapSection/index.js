@@ -37,16 +37,27 @@ class Map extends React.Component{
             console.log(err);
         }
     }
+
     render() {
-        const crimeList = this.state.crimeList;
-        
+        const crimeList = this.state.data;
         return(
         <MapContainer id="map">
+            <ContentTitle>Price George County</ContentTitle>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyAZ8RBpp3vhVQbAv_WZTWu-FQhH8EOTtTM', libraries:['visualization']}}
                 defaultCenter={{lat: 38.98, lng: -76.94}}
                 defaultZoom={15}       
                 yesIWantToUseGoogleMapApiInternals
+                options={{mapTypeId:"satellite"}}
+                onGoogleApiLoaded={({map, maps}) => {
+                    const heatmap = new maps.visualization.HeatmapLayer({
+                      data: crimeList?.map(point => (
+                        {location: new maps.LatLng(point['lat'], point['lng']), weight:3}))
+                    ,radius: 20
+                        
+                    });
+                    heatmap.setMap(map);
+                  }}
                 >
             </GoogleMapReact>
         </MapContainer>
