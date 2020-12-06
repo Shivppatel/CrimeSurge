@@ -61,6 +61,9 @@ On a political scale, the app is meant to give public officials an idea of what 
 ### Built With
 
 - [React](https://reactjs.org)
+- [Express](https://expressjs.com)
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)
+- [SQLite](https://www.sqlite.org/index.html)
 - [Material UI](https://material-ui.com)
 
 <!-- GETTING STARTED -->
