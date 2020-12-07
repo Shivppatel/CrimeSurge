@@ -7,10 +7,9 @@ export const StatisticsContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   height: 100vh;
-  width: 100vw;
   position: relative;
   z-index: 1;
-  background: #dae0e2;
+  background: #2a456e;
 `;
 
 export const StatisticsWrapper = styled.div`
@@ -26,43 +25,8 @@ export const StatisticsWrapper = styled.div`
   }
 `;
 
-export const StatisticsContentMain = styled.div`
-  flex: 0.8;
-  padding: 20px;
-  background: #2c3335;
-  border-radius: 10px;
-  width: 95vw;
-  color: white;
-`;
-export const StatisticsContentBottom = styled.div`
-  flex: 0.2;
-  padding: 20px;
-  width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-`;
-export const StatisticsContentLeft = styled.div`
-  padding: 20px;
-  flex: 0.4;
-  height:100%;
-  background: #2c3335;
-  border-radius: 10px;
-  min-width: 400px;
-`;
-export const StatisticsContentRight = styled.div`
-  flex: 0.4;
-  padding: 20px;
-  background: #2c3335;
-  border-radius: 10px;
-  min-width: 400px;
-  height:100%;
-`;
-
 export const StatisticsTitle = styled.h1`
-  color: #0a79df;
+  color: white;
   margin-bottom: 64px;
   font-size: 2.5rem;
 

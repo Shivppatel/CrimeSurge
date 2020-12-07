@@ -3,7 +3,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const FooterContainer = styled.div`
   height: 100px;
-  background: #616c6f;
+  background: #17263c;
   display: flex;
   flex-direction: column;
   text-align: center;

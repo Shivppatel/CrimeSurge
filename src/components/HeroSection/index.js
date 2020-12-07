@@ -43,7 +43,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            View Crime Hot Spots {hover ? <ArrowForward /> : <ArrowRight />}
+            View Crime Heatmap{hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
