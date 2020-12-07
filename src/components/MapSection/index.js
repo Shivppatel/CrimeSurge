@@ -12,6 +12,7 @@ class Map extends React.Component{
     }
 
     async componentDidMount(){
+        if (!this.state.isLoaded) {
         try{
             const response = await fetch('https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json');
             const value = await response.json();
@@ -29,6 +30,7 @@ class Map extends React.Component{
         } catch(err){
             console.log(err);
         }
+    }
     }
 
     render() {

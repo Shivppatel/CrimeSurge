@@ -59,30 +59,32 @@ class Statistics extends React.Component {
     };
   }
   async componentDidMount() {
-    try {
-      const response = await fetch(
-        "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json"
-      );
-      const value = await response.json();
-      const series = {};
-      const seriesList =  [];
-      value.forEach((element) => {
-        if (element["clearance_code_inc_type"] in series) {
-          series[element["clearance_code_inc_type"]] += 1;
-        } else {
-          series[element["clearance_code_inc_type"]] = 1;
-        }
-      });
-      for (let type in series) {
+    if (!this.state.isLoaded) {
+      try {
+        const response = await fetch(
+          "https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json"
+        );
+        const value = await response.json();
+        const series = {};
+        const seriesList = [];
+        value.forEach((element) => {
+          if (element["clearance_code_inc_type"] in series) {
+            series[element["clearance_code_inc_type"]] += 1;
+          } else {
+            series[element["clearance_code_inc_type"]] = 1;
+          }
+        });
+        for (let type in series) {
           seriesList.push({ x: type, y: series[type] });
+        }
+        this.setState({
+          isLoaded: true,
+          crimeTypeList: [{ data: seriesList }],
+        });
+        console.log(seriesList);
+      } catch (err) {
+        console.log(err);
       }
-      this.setState({
-        isLoaded: true,
-        crimeTypeList: [{data:seriesList}],
-      });
-      console.log(seriesList);
-    } catch (err) {
-      console.log(err);
     }
   }
 
