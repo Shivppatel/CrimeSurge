@@ -17,7 +17,7 @@ export const AboutWrapper = styled.div`
     flex-wrap:wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 40vh;
+    height: 70vh;
     @media screen and (max-width: 768px){
         height: 70vh;
     }
@@ -89,8 +89,11 @@ export const AboutImage = styled.div`
     
 `;
 export const Image = styled.img`
-        width: 450px;
+        width: 250px;
     @media screen and (max-width: 768px){
-        height: 300px;
+        width: 200px;
+    }
+    @media screen and (min-width: 1160px){
+        width: 450px;
     }
 `;
