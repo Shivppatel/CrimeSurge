@@ -7,10 +7,9 @@ export const StatisticsContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   height: 100vh;
-  width: 100vw;
   position: relative;
   z-index: 1;
-  background: #dae0e2;
+  background: #2a456e;
 `;
 
 export const StatisticsWrapper = styled.div`
@@ -27,7 +26,7 @@ export const StatisticsWrapper = styled.div`
 `;
 
 export const StatisticsTitle = styled.h1`
-  color: #17263c;
+  color: white;
   margin-bottom: 64px;
   font-size: 2.5rem;
 

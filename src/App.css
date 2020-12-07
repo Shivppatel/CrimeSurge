@@ -4,3 +4,7 @@
   padding: 0;
   font-family: "Encode Sans Explained", sans-serif;
 }
+
+.Home{
+  overflow-x: hidden;
+}

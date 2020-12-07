@@ -78,7 +78,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #d59563;
+    border-bottom: 3px solid #A3C2F0;
   }
 `;
 export const Abbr = styled.abbr`
