@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const MapContainer = styled.div`
-  background: #2a456e;
+  background: #A3C2F0;
   justify-content: center;
   align-items: center;
   height: 92vh;
   position: relative;
   z-index: 1;
-  padding:20px;
 `;
 
 export const ContentTitle = styled.h1`

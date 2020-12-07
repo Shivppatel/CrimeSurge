@@ -85,7 +85,9 @@ export const ContentBody = styled.p`
 `;
 export const AboutImage = styled.div`
 margin-left:20px;
-  padding: 30px;
+  padding: 20px;
+  background:#A3C2F0;
+  border-radius:10px
 `;
 export const Image = styled.img`
   width: 250px;

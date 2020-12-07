@@ -9,7 +9,7 @@ export const DocContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  background: #2a456e;
+  background: #A3C2F0;
   color: black;
   overflow-y: hidden;
 `;
@@ -60,7 +60,7 @@ export const DocCard = styled.div`
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    border-bottom: 30px solid #A3C2F0;
+    border-bottom: 30px solid #2a456e;
     cursor: pointer;
   }
 `;
