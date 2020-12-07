@@ -7,12 +7,18 @@ class Map extends React.Component{
         super(props);
         this.state ={
             data: null,
-            isLoaded: false
-        }; 
+            isLoaded: false,
+            crimeList:  {    
+                positions: [
+                ],
+                options: {   
+                  radius: 20,   
+                  opacity: 0.6,
+              }
+        }}; 
     }
 
     async componentDidMount(){
-        if (!this.state.isLoaded) {
         try{
             const response = await fetch('https://data.princegeorgescountymd.gov/resource/wb4e-w4nf.json');
             const value = await response.json();
@@ -31,7 +37,6 @@ class Map extends React.Component{
             console.log(err);
         }
     }
-    }
 
     render() {
         const crimeList = this.state.data;
@@ -40,7 +45,7 @@ class Map extends React.Component{
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyAZ8RBpp3vhVQbAv_WZTWu-FQhH8EOTtTM', libraries:['visualization']}}
                 defaultCenter={{lat: 38.98, lng: -76.94}}
-                defaultZoom={12}       
+                defaultZoom={15}       
                 yesIWantToUseGoogleMapApiInternals
                 options={{minZoom:11, maxZoom:18, styles: [
                     { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
