@@ -7,15 +7,8 @@ class Map extends React.Component{
         super(props);
         this.state ={
             data: null,
-            isLoaded: false,
-            crimeList:  {    
-                positions: [
-                ],
-                options: {   
-                  radius: 20,   
-                  opacity: 0.6,
-              }
-        }}; 
+            isLoaded: false
+        }; 
     }
 
     async componentDidMount(){
@@ -45,7 +38,7 @@ class Map extends React.Component{
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyAZ8RBpp3vhVQbAv_WZTWu-FQhH8EOTtTM', libraries:['visualization']}}
                 defaultCenter={{lat: 38.98, lng: -76.94}}
-                defaultZoom={15}       
+                defaultZoom={12}       
                 yesIWantToUseGoogleMapApiInternals
                 options={{minZoom:11, maxZoom:18, styles: [
                     { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
