@@ -60,6 +60,7 @@ export const DocCard = styled.div`
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
+    border-bottom: 30px solid #A3C2F0;
     cursor: pointer;
   }
 `;
