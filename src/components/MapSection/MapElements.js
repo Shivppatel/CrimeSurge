@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MapContainer = styled.div`
-  padding:40px;
   background: #616c6f;
   justify-content: center;
   align-items: center;

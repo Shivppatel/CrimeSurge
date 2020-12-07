@@ -42,7 +42,6 @@ class Map extends React.Component{
         const crimeList = this.state.data;
         return(
         <MapContainer id="map">
-            <ContentTitle>Price George County</ContentTitle>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyAZ8RBpp3vhVQbAv_WZTWu-FQhH8EOTtTM', libraries:['visualization']}}
                 defaultCenter={{lat: 38.98, lng: -76.94}}

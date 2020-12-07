@@ -62,7 +62,7 @@ export const StatisticsContentRight = styled.div`
 `;
 
 export const StatisticsTitle = styled.h1`
-  color: #0a79df;
+  color: #17263c;
   margin-bottom: 64px;
   font-size: 2.5rem;
 

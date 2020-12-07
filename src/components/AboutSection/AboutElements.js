@@ -32,7 +32,7 @@ export const AboutContent = styled.div`
     background: white;
     border-radius: 10px;
     max-width: 90vw;
-    box-shadow: -5px 6px #A4B0BD;
+    box-shadow: -5px 6px #17263c;
 `;
 export const ContentItem = styled.div`
     padding: 15px;
@@ -50,7 +50,7 @@ export const ContentItem = styled.div`
     }
 `;
 export const AboutTitle = styled.h1`
-    color: #0A79DF;
+    color: #17263c;
     margin-bottom: 64px;
     font-size: 2.5rem;
 
@@ -59,7 +59,7 @@ export const AboutTitle = styled.h1`
   }
 `;
 export const ContentTitle = styled.h2`
-    color: #0A79DF;
+    color: #17263c;
     font-size: 20px;
     max-width: 380px;
 
