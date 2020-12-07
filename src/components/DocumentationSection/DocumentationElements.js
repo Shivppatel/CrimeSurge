@@ -39,16 +39,25 @@ export const DocWrapper = styled.div`
 export const DocCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content:center;
   align-items: center;
   border-radius: 10px;
-  padding: 30px;
+  padding: 25px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0px 1px 3px #a4b0bd;
+  box-shadow: 0px 1px 3px #17263c;
   transition: all 0.2s ease-in-out;
-  min-height: 400px;
+  max-height: 230px;
+  
 
+  @media screen and (max-width: 480px) {
+    max-height: 210px;
+    padding:20px;
+  }
+  @media screen and (min-width: 1000px) {
+    min-height: 400px;
+  }
+  
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
@@ -57,9 +66,14 @@ export const DocCard = styled.div`
 `;
 
 export const DocIcon = styled.img`
-  height: 260px;
-  width: 260px;
+  width: 150px;
   margin-bottom: 10px;
+    @media screen and (max-width: 768px){
+        width: 200px;
+    }
+    @media screen and (min-width: 1000px) {
+        width: 250px;
+  }
 `
 
 export const DocH1 = styled.h1`
@@ -82,3 +96,7 @@ export const DocP = styled.p`
   text-align: center;
 `;
 
+export const Link = styled.a`
+text-decoration:none;
+color: #17263c;
+`
