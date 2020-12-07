@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Shivppatel/PGC-Crime-Map">
-    <img src="images/logo1.jpg" alt="Logo" width="500" height="250">
+    <img src="images/logo1.jpg" alt="Logo" width="450" height="500">
   </a>
 
   <h3 align="center">Prince George's County Crime Map</h3>
