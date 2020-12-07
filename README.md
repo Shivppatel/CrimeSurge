@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Shivppatel/PGC-Crime-Map">
-    <img src="images/logo1.jpg" alt="Logo" width="500" height="250">
+    <img src="images/logo1.jpg" alt="Logo" width="450" height="500">
   </a>
 
   <h3 align="center">Prince George's County Crime Map</h3>
@@ -20,7 +20,7 @@
     <a href="https://github.com/Shivppatel/PGC-Crime-Map"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://pgc-crime-map.herokuapp.com/">View Deployed Demo</a>
+    <a href="https://crimesurge.herokuapp.com/">View Deployed Demo</a>
     ·
     <a href="https://github.com/Shivppatel/PGC-Crime-Map/issues">Report Bug</a>
     ·
@@ -61,7 +61,7 @@ On a political scale, the app is meant to give public officials an idea of what 
 
     - Our main targets are iOS devices such as Macbooks and iPhones.
 
-[![Product Name Screen Shot][product-screenshot]](https://pgc-crime-map.herokuapp.com/)
+[![Product Name Screen Shot][product-screenshot]](https://crimesurge.herokuapp.com/)
 
 ### Built With
 
