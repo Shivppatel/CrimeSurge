@@ -34,28 +34,3 @@ export const StatisticsTitle = styled.h1`
     font-size: 2rem;
   }
 `;
-
-export const StatChart = styled.div`
-    background: gray;
-    border: 2px dotted black;
-    border-radius: 4px;
-    height: 500px;
-    width: 75%;
-    margin-bottom: 15px;
-
-
-`;
-
-export const StatButton = styled.button`
-background-color: white;
-color: black;
-padding: 6px 12px;
-border: none;
-text-transform: uppercase;
-letter-spacing: 1.2px;
-border-radius: 3px;
-display: block;
-margin: 0 auto;
-
-
-`;
