@@ -2,11 +2,7 @@ import React from "react";
 import {
   StatisticsContainer,
   StatisticsTitle,
-  StatisticsWrapper,
-  StatisticsContentMain,
-  StatisticsContentLeft,
-  StatisticsContentRight,
-  StatisticsContentBottom
+  StatisticsWrapper
 } from "./StatisticsElements";
 
 const Statistics = () => {
