@@ -91,6 +91,7 @@ margin-left:20px;
 `;
 export const Image = styled.img`
   width: 250px;
+  height: 475px;
   @media screen and (max-width: 768px) {
     width: 200px;
   }

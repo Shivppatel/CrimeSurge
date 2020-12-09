@@ -11,29 +11,31 @@ const About = () => {
         <ContentItem>
           <ContentTitle>Our Goal</ContentTitle>
           <ContentBody>
-            Our goal is to find out what crimes occur the most in Prince
-            George’s County (PG County) and where, and then highlight these
-            crime hotspots so people can avoid them and policy can be drafted by
-            local governments to reduce these crimes.
+            The goal of this site is to determine what types of crime 
+            occur most often in Prince George's County (PG County) and where. 
+            This will enable individuals to avoid these hotspots for personal
+            safety, and elected officials to draft policy based on the 
+            where crime is most concentrated to reduce it.
           </ContentBody>
         </ContentItem>
         <ContentItem>
-          <ContentTitle>About Out Dataset</ContentTitle>
+          <ContentTitle>About Our Dataset</ContentTitle>
           <ContentBody>
-            The dataset we’re focused on is “Crime Incidents February 2017 to
-            Present” which gives us a glimpse into the most relevant crimes for
-            the past three years. Our columns of interest are
-            clearnace_code_inc_type (what type of crime is committed), PGPD
-            Sector (the district the crime occurred in), and street number and
-            street address (the street it was committed on).
+            The dataset utilized is "Crime Incidents February 2017 to Present",
+            which focuses on crimes committed in the past three years. The most
+            notable parts of the data are the longitude and latitude for the exact
+            location of the crime for a heatmap and the type of crime for a bar
+            chart. Other data of interest is the time of the crime and the specific
+            district the crime was committed in. 
           </ContentBody>
         </ContentItem>
         <ContentItem>
-          <ContentTitle>What Our Dataset Will Tell Us</ContentTitle>
+          <ContentTitle>What the Dataset Will Tell Us</ContentTitle>
           <ContentBody>
-            All of this data tells us where a crime was committed and what type
-            of crime occurred, making our hotspots more accurate and useful to
-            our audience.
+            The data will reveal what types of crime are committed the most and 
+            where. This makes the heatmap more accurate and useful for individuals  
+            who want to avoid crime-heavy areas and for local governments that need 
+            to figure out where to concentrate their funding. 
           </ContentBody>
         </ContentItem>
       </AboutContent>
