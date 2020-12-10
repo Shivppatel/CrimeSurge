@@ -2,8 +2,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const mongoose = require("mongoose");
+const path = require('path');
 const incidentModel = require("./models/incident");
 const PORT = process.env.PORT || 5000;
+
+
 app.use(bodyParser.json({ limit: "30mb", extended: "true" }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: "true" }));
 
@@ -27,7 +30,7 @@ app.get("/api", (req, res) => {
 app.get("/api/incident-data", async (req, res) => {
   const incidents = await incidentModel.find({});
   try {
-    res.send(incidents);
+    res.json(incidents);
   } catch (err) {
     res.status(500).send(err);
   }
