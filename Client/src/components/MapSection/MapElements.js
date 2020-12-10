@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MapContainer = styled.div`
-  background: #A3C2F0;
+  background: #a3c2f0;
   justify-content: center;
   align-items: center;
   height: 92vh;
@@ -10,10 +10,11 @@ export const MapContainer = styled.div`
 `;
 
 export const ContentTitle = styled.h1`
-  margin-bottom:10px;
-  color: white;
+  margin-bottom: 10px;
   font-size: 2.5rem;
-  text-align:center;
+  text-align: center;
+  color: white;
+  padding:30px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
