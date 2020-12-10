@@ -144,18 +144,18 @@ class Map extends React.Component {
               });
               heatmap.setMap(map);
               crimeList?.forEach((point) => {
-                var type = point['type'];
-                var date = new Date(point['date']).toLocaleDateString();
+                var type = point["type"];
+                var date = new Date(point["date"]).toLocaleDateString();
                 var contentString =
                   '<div id="content">' +
                   '<div id="siteNotice">' +
                   "</div>" +
                   '<h2 id="firstHeading" class="firstHeading">' +
-                  type+
-                  '</h2>'+
+                  type +
+                  "</h2>" +
                   '<div id="bodyContent">' +
-                  "<p><b>"+
-                 date+
+                  "<p><b>" +
+                  date +
                   "</b></p>" +
                   "</div>" +
                   "</div>";
