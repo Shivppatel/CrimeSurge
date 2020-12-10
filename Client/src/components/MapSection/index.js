@@ -1,7 +1,7 @@
 import React from "react";
 import { MapContainer, ContentTitle } from "./MapElements";
 import GoogleMapReact from "google-map-react";
-
+import MarkerImage from '../../images/marker.png'
 class Map extends React.Component {
   constructor(props) {
     super(props);
@@ -169,6 +169,7 @@ class Map extends React.Component {
                   ),
                   map,
                   title: point["type"],
+                  icon: MarkerImage
                 });
                 marker.addListener("click", () => {
                   infowindow.open(map, marker);
