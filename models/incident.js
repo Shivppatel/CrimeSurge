@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const IncidentSchema = new mongoose.Schema({
   date: {
@@ -10,10 +10,10 @@ const IncidentSchema = new mongoose.Schema({
     default: "Not Provided",
   },
   location: {
-      type: Map,
-      of: String,
-      required: true,
-  }
+    type: Map,
+    of: String,
+    required: true,
+  },
 });
 
 const Incident = mongoose.model("Incident", IncidentSchema);
