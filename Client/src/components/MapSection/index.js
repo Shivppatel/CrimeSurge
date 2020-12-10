@@ -143,8 +143,7 @@ class Map extends React.Component {
                 radius: 20,
               });
               heatmap.setMap(map);
-              const markers = [];
-              crimeList?.map((point) => {
+              crimeList?.forEach((point) => {
                 var type = point['type'];
                 var date = new Date(point['date']).toLocaleDateString();
                 var contentString =
