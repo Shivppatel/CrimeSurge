@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Shivppatel/PGC-Crime-Map">
-    <img src="images/logo1.jpg" alt="Logo" width="450" height="500">
+    <img src="images/logo1.jpg" alt="Logo" width="250" height="250">
   </a>
 
   <h3 align="center">Prince George's County Crime Map</h3>
@@ -64,11 +64,11 @@ On a political scale, the app is meant to give public officials an idea of what 
 [![Product Name Screen Shot][product-screenshot]](https://crimesurge.herokuapp.com/)
 
 ### Built With
-
+- [MongoDB](https://www.mongodb.com/)
 - [React](https://reactjs.org)
 - [Express](https://expressjs.com)
-- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)
-- [SQLite](https://www.sqlite.org/index.html)
+- [Node.js](https://nodejs.org/en/)
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
 - [ApexCharts](https://apexcharts.com/)
 
 <!-- GETTING STARTED -->
