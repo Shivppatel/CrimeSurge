@@ -134,7 +134,7 @@ Project Link: [https://github.com/Shivppatel/PGC-Crime-Map](https://github.com/S
 
 # Developer's Manual
 
-<!-- TABLE OF CONTENTS -->
+<!-- Developer Manual TABLE OF CONTENTS -->
 
 ## Table of Contents
 
@@ -149,12 +149,14 @@ Project Link: [https://github.com/Shivppatel/PGC-Crime-Map](https://github.com/S
 - [Known Bugs and Future Development](#known-bugs-and-future-development)
 
 ## Developer Manual Introduction 
-	Welcome to the developer’s manual for the Prince George’s County Crime Map Web API (PGC Crime Map). In this document you’ll find how to install and run this application in addition to the API requests used to make the application work. You’ll also find any of the bugs consistently found in the project, how they were dealt with, and any plans for future development. 
+
+Welcome to the developer’s manual for the Prince George’s County Crime Map Web API (PGC Crime Map). In this document you’ll find how to install and run this application in addition to the API requests used to make the application work. You’ll also find any of the bugs consistently found in the project, how they were dealt with, and any plans for future development. 
 
 ## Developer Installation 
 	
-	Run “npm install” in a new terminal window to download the basic parts of the package.json file. This will install said file into the local node_modules folder, which may be necessary to run the application. If the application cannot run but there’s no error in your code, you may just have to run “npm install”, especially if you just installed another package. 
-	After this, run “npm install --save node-fetch”. This will allow you to retrieve external data into your server.js file or anything similar to it. 
+Run “npm install” in a new terminal window to download the basic parts of the package.json file. This will install said file into the local node_modules folder, which may be necessary to run the application. If the application cannot run but there’s no error in your code, you may just have to run “npm install”, especially if you just installed another package.
+
+After this, run “npm install --save node-fetch”. This will allow you to retrieve external data into your server.js file or anything similar to it. 
 
 The application is made using React, a single-page web application. In order to install/start a new React project, you must input “npx create-react-app [app-name]” into the terminal of your window. Doing so will provide you with a basic react project with the standard functionalities installed, including a “src” folder that will hold all of the components to make the application. 
 After doing this, create folders for your components, page, video, and images. The components will hold the individual “pages” of the application, including the home page, about, and documentation pages. The “pages” folder will hold the basic structure of the page in an “index.js” file, including the header, footer, and individual pages such as the homepage, about, and documentation. The images and videos folders will hold the images and videos (or link to them) used for the web page. 
@@ -165,40 +167,49 @@ After installing the sqlite libraries, the setup for your application should be 
 
 
 ## Running the Application 
-	To run the program, type “npm start” into the terminal after everything is installed. If everything has been installed correctly, this command should open up a new local instance of the server 3000 (although if that server is currently running, you will be prompted to use another server). Your local instance should open up as a new tab in your browser, but if it doesn’t, type “localhost:[current local host number]” to navigate to the local instance of the application. 
 
-	If there are issues with opening the local instance at all, there may be an error in your code or in the packages installed for your instance of the project. Running “npm install” should fix most of these issues, especially after installing other packages such as sqlite or React, but if the problem persists after npm install, there may be an issue outside of a coding error. The terminal may list solutions to this issue, and most of the time, the first listed solution, deleting “package-lock.json” will resolve the issue in the local instance. 
+To run the program, type “npm start” into the terminal after everything is installed. If everything has been installed correctly, this command should open up a new local instance of the server 3000 (although if that server is currently running, you will be prompted to use another server). Your local instance should open up as a new tab in your browser, but if it doesn’t, type “localhost:[current local host number]” to navigate to the local instance of the application. 
+
+If there are issues with opening the local instance at all, there may be an error in your code or in the packages installed for your instance of the project. Running “npm install” should fix most of these issues, especially after installing other packages such as sqlite or React, but if the problem persists after npm install, there may be an issue outside of a coding error. The terminal may list solutions to this issue, and most of the time, the first listed solution, deleting “package-lock.json” will resolve the issue in the local instance. 
+
 If that doesn’t work, the other options may resolve the problem, but if they don’t, make sure to pull any changes made to the main branch if you’re working in a group. The version differences between branches may resolve the problem. If pulling or merging branches does not work, uninstalling and reinstalling the project may fix the issue. Reinstallation should solve the problem and wipe out any mistakes made during the initial installation process, but if the problem persists after reinstallation, additional research may be needed. 
 
 ## Running Tests
-	The PGC Crime Map API technically does not have any official tests to run to test its functionality such as Cypress. There are, however, several visual ways to test the application, much like any application. 
 
-	The first is to make sure the web page has opened and displayed its contents correctly. Any differences between the expectation and reality of factors such as placement, color, and text size should be noted and fixed in the code if possible. 
+The PGC Crime Map API technically does not have any official tests to run to test its functionality such as Cypress. There are, however, several visual ways to test the application, much like any application. 
 
-	Secondly, the heat map should display hues of green, yellow, and red on the imported Google map that show where crimes (or other activities) are concentrated the most. If this isn’t true, the data points may have been retrieved incorrectly or the link to the API may be broken. 
+The first is to make sure the web page has opened and displayed its contents correctly. Any differences between the expectation and reality of factors such as placement, color, and text size should be noted and fixed in the code if possible. 
 
-	Third, if the statistics aren’t shown to be similar to the tableau version of the data, the get or post requests likely faltered, the SQL script has an error in it, or the link to the API is broken. 
+Second, the heat map should display hues of green, yellow, and red on the imported Google map that show where crimes (or other activities) are concentrated the most. If this isn’t true, the data points may have been retrieved incorrectly or the link to the API may be broken. 
+
+Third, if the statistics aren’t shown to be similar to the tableau version of the data, the get or post requests likely faltered, the SQL script has an error in it, or the link to the API is broken. 
 
 
 ## API
-	The application mainly utilizes the get and post endpoints to retrieve and post the data from the PG County API, respectively. These endpoints can be found in app.js, along with the code for SQLite endpoints. Calls directly to the API outside of SQL instances will have a “/api” as the API endpoint while calls utilizing SQLite will have “/sql” as the API endpoint (e.g. app.route(‘/api’) vs. app.route(‘/sql’)). 
+
+The application mainly utilizes the get and post endpoints to retrieve and post the data from the PG County API, respectively. These endpoints can be found in app.js, along with the code for SQLite endpoints. Calls directly to the API outside of SQL instances will have a “/api” as the API endpoint while calls utilizing SQLite will have “/sql” as the API endpoint (e.g. app.route(‘/api’) vs. app.route(‘/sql’)). 
 
 
 ### GET
-	The get endpoint is meant to retrieve data from the PG County API, with said data usually being in the form of JSON (the URL the get endpoint links to should have “.json” at the end of it). Some of the utility of the get endpoint can be circumvented in the post endpoint if coded properly, but the get request is still useful for retrieving data. In the get endpoint, a console statement such as “get request detected” is output if the get request is valid. The sql endpoint works much the same way. 
+
+The get endpoint is meant to retrieve data from the PG County API, with said data usually being in the form of JSON (the URL the get endpoint links to should have “.json” at the end of it). Some of the utility of the get endpoint can be circumvented in the post endpoint if coded properly, but the get request is still useful for retrieving data. In the get endpoint, a console statement such as “get request detected” is output if the get request is valid. The sql endpoint works much the same way. 
 
 
 ### POST
-	The post endpoint sends data to our server, usually in the form of a map or a graph for crime hotspots and statistics. The api post endpoint utilizes a constant that stores the data from the site with an “await fetch(url)” call. That constant’s data is then stored into another constant as a JSON object, with the second constant then being sent as a JSON response. The endpoint also outputs a few messages to the log to ensure the post request is working, such as “‘fetch request data’, json”, that developers can check in their local instance. 
-	The SQL post endpoint works a bit differently in order to work with a stored database. This endpoint will first print out a message to the log to ensure the get endpoint’s code is working properly, and then proceeds to open the initial database created. After that, the database runs a query that returns the crime statistics categorized. 
+
+The post endpoint sends data to our server, usually in the form of a map or a graph for crime hotspots and statistics. The api post endpoint utilizes a constant that stores the data from the site with an “await fetch(url)” call. That constant’s data is then stored into another constant as a JSON object, with the second constant then being sent as a JSON response. The endpoint also outputs a few messages to the log to ensure the post request is working, such as “‘fetch request data’, json”, that developers can check in their local instance. 
+
+The SQL post endpoint works a bit differently in order to work with a stored database. This endpoint will first print out a message to the log to ensure the get endpoint’s code is working properly, and then proceeds to open the initial database created. After that, the database runs a query that returns the crime statistics categorized. 
 
 
 ### PUT
-	The put request is the only API endpoint that is missing, due to most of its functionality being fulfilled by the post request. 
+
+The put request is the only API endpoint that is missing, due to most of its functionality being fulfilled by the post request. 
 
 
-## Known Bugs and Future Development 
-	There are several potential bugs in the application that still need to be resolved. The heat map’s data points, when zoomed out a bit, can become blob-like and indistinguishable from each other. This bug does not occur often, but it does exist and can make identifying crime hotspots difficult. In the future this will be remedied by looking at the styling choices of the heatmap and if there is a way to keep hotspots more distinct from each other even when zoomed a certain distance away. 
+## Known Bugs and Future Development
+
+There are several potential bugs in the application that still need to be resolved. The heat map’s data points, when zoomed out a bit, can become blob-like and indistinguishable from each other. This bug does not occur often, but it does exist and can make identifying crime hotspots difficult. In the future this will be remedied by looking at the styling choices of the heatmap and if there is a way to keep hotspots more distinct from each other even when zoomed a certain distance away. 
 
 Another bug is with the statistics page’s main chart for crime by category. Sometimes when the button the push the crime is used, the statistics don’t reset and instead add onto the existing crime counts by category. This may be a bug with the Sqlite code and how the data is imported and deleted (or not deleted) between button presses. Future development will focus on deleting the sql database entirely between calls if necessary to ensure this stacked data does not appear. 
 
