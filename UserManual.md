@@ -43,7 +43,7 @@ The about page has three sections: “Our Goal”, “About Our Dataset”, and 
 
 ## Crime Map
 
-The Crime Map is a dynamic page on our site that utilizes a heatmap. It generates points on the map using latitude and longitude data and indicates where a crime has occured. When many points are in the same location the heat map registers a red area. When a low amount of crime occurs in an area the color is green.
+The Crime Map is a dynamic page on our site, Crime Surge, that utilizes a heatmap. It generates points on the map using latitude and longitude data and indicates where a crime has occured. When many points are in the same location the heat map registers a red area. When a low amount of crime occurs in an area the color is green.
 
 The map is laid over a Google Map-like structure, and has similar controls to a Google Map as a result. When you scroll over the map, the map image will darken and you will be given a prompt to control the map’s current location by holding down a button and using the mouse. Holding down this button and pushing up/back or scrolling up and down will zoom the map out and in respectively for better visualization of specific parts or the entirety of the map. (Left) Clicking the map and holding the cursor down will allow you to move the map from left to right and up and down by moving your mouse in a direction. Heat map points may become less “concentrated” when zoomed in, i.e. red and yellow spots may not display with said colors and you may have to zoom out to see the actual areas where crime is concentrated.
 
