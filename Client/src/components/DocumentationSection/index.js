@@ -40,7 +40,7 @@ const Documentation = () => {
             </DocP>
           </DocCard>
         </Link>
-        <Link href="https://www.google.com">
+        <Link href="https://github.com/Shivppatel/PGC-Crime-Map/blob/main/DevManual.md">
           <DocCard>
             <DocIcon src={Icon3} />
             <DocH2>Developer Manual</DocH2>
