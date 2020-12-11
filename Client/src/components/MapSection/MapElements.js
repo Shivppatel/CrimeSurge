@@ -14,7 +14,7 @@ export const ContentTitle = styled.h1`
   font-size: 2.5rem;
   text-align: center;
   color: white;
-  padding:30px;
+  padding: 30px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;

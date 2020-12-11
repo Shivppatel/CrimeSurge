@@ -2,6 +2,7 @@ import React from "react";
 import { MapContainer, ContentTitle } from "./MapElements";
 import GoogleMapReact from "google-map-react";
 
+import MarkerImage from '../../images/marker.png'
 class Map extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +26,7 @@ class Map extends React.Component {
       }
     }
   }
-
+  
   render() {
     const crimeList = this.state.data;
 
@@ -144,18 +145,18 @@ class Map extends React.Component {
               });
               heatmap.setMap(map);
               crimeList?.forEach((point) => {
-                var type = point['type'];
-                var date = new Date(point['date']).toLocaleDateString();
+                var type = point["type"];
+                var date = new Date(point["date"]).toLocaleDateString();
                 var contentString =
                   '<div id="content">' +
                   '<div id="siteNotice">' +
                   "</div>" +
                   '<h2 id="firstHeading" class="firstHeading">' +
-                  type+
-                  '</h2>'+
+                  type +
+                  "</h2>" +
                   '<div id="bodyContent">' +
-                  "<p><b>"+
-                 date+
+                  "<p><b>" +
+                  date +
                   "</b></p>" +
                   "</div>" +
                   "</div>";
@@ -169,6 +170,7 @@ class Map extends React.Component {
                   ),
                   map,
                   title: point["type"],
+                  icon: MarkerImage
                 });
                 marker.addListener("click", () => {
                   infowindow.open(map, marker);

@@ -31,7 +31,7 @@ export const AboutContent = styled.div`
   background: white;
   border-radius: 10px;
   max-width: 90vw;
-  box-shadow: -2px 3px #a3c2f0;
+  box-shadow: 0px 0px 5px #a3c2f0;
 `;
 export const ContentItem = styled.div`
   padding: 15px;
@@ -84,10 +84,11 @@ export const ContentBody = styled.p`
   }
 `;
 export const AboutImage = styled.div`
-margin-left:20px;
+  margin-left: 20px;
   padding: 20px;
-  background:#A3C2F0;
-  border-radius:10px
+  background: #17263c;
+  border-radius: 10px;
+  border:none;
 `;
 export const Image = styled.img`
   width: 250px;
