@@ -130,6 +130,8 @@ Project Link: [https://github.com/Shivppatel/PGC-Crime-Map](https://github.com/S
 [issues-url]: https://github.com/Shivppatel/PGC-Crime-Map/issues
 [product-screenshot]: images/screenshot.jpg
 
+
+
 <!-- Developer's Manual -->
 
 # Developer's Manual
@@ -162,15 +164,16 @@ The application is made using React, a single-page web application. In order to 
 After doing this, create folders for your components, page, video, and images. The components will hold the individual “pages” of the application, including the home page, about, and documentation pages. The “pages” folder will hold the basic structure of the page in an “index.js” file, including the header, footer, and individual pages such as the homepage, about, and documentation. The images and videos folders will hold the images and videos (or link to them) used for the web page. 
 The components folder will hold an individual folder for each component’s page structure called “index.js” and a styling file named “component_name.js” that the index.js will be linked to (or rather import the styling from). The index.js file will function much like a regular HTML page with the exception that you’ll be using capitalized letters for any class names you make in the styling js file (header will become “Header” so the rules from the styling file can be applied in the index.js file). Keep in mind that for each index.js file, you’ll need to type “import React from ‘react’” at the top of the file, and import any other necessary libraries as well such as “import GoogleMapReact from ‘google-map-react’”. 
 
-The final component you’ll need to install is the sqlite functionality. Sqlite can be used to store data in a local database on the server, and can retrieve this data from APIs. In order to install sqlite on your local machine, run both “npm install --save sqlite3” and “npm install --save sqlite”. Note that you may also need to run “ “npm install sqlite sqlite3 --save”, but the first two commands should be enough. 
-After installing the sqlite libraries, the setup for your application should be completed. Next you may want to run the program to ensure that it works. 
+<!-- The final component you’ll need to install is the sqlite functionality. Sqlite can be used to store data in a local database on the server, and can retrieve this data from APIs. In order to install sqlite on your local machine, run both “npm install --save sqlite3” and “npm install --save sqlite”. Note that you may also need to run “ “npm install sqlite sqlite3 --save”, but the first two commands should be enough. 
+After installing the sqlite libraries, the setup for your application should be completed. Next you may want to run the program to ensure that it works. -->
 
 
 ## Running the Application 
 
-To run the program, type “npm start” into the terminal after everything is installed. If everything has been installed correctly, this command should open up a new local instance of the server 3000 (although if that server is currently running, you will be prompted to use another server). Your local instance should open up as a new tab in your browser, but if it doesn’t, type “localhost:[current local host number]” to navigate to the local instance of the application. 
+To run the program after everything is installed, first move into the “Clients” directory with “cd Clients”. Type “npm start” into the terminal in this directory to begin running the front end of the application. If everything has been installed correctly, this command should open up a new local instance of server 3000 (although if that server is currently running, you will be prompted to use another server). Your local instance should open up as a new tab in your browser, but if it doesn’t, type “localhost:[current local host number]” to navigate to the local instance of the application. 
 
-If there are issues with opening the local instance at all, there may be an error in your code or in the packages installed for your instance of the project. Running “npm install” should fix most of these issues, especially after installing other packages such as sqlite or React, but if the problem persists after npm install, there may be an issue outside of a coding error. The terminal may list solutions to this issue, and most of the time, the first listed solution, deleting “package-lock.json” will resolve the issue in the local instance. 
+After you have confirmed the front end has begun running correctly, move back into the main directory with “cd ..” and run “npm start” again. This will start the back end that utilizes API calls such as get, post, and put. 
+
 
 If that doesn’t work, the other options may resolve the problem, but if they don’t, make sure to pull any changes made to the main branch if you’re working in a group. The version differences between branches may resolve the problem. If pulling or merging branches does not work, uninstalling and reinstalling the project may fix the issue. Reinstallation should solve the problem and wipe out any mistakes made during the initial installation process, but if the problem persists after reinstallation, additional research may be needed. 
 
@@ -187,24 +190,21 @@ Third, if the statistics aren’t shown to be similar to the tableau version of 
 
 ## API
 
-The application mainly utilizes the get and post endpoints to retrieve and post the data from the PG County API, respectively. These endpoints can be found in app.js, along with the code for SQLite endpoints. Calls directly to the API outside of SQL instances will have a “/api” as the API endpoint while calls utilizing SQLite will have “/sql” as the API endpoint (e.g. app.route(‘/api’) vs. app.route(‘/sql’)). 
+The application mainly utilizes the get, post, and put endpoints to retrieve and post the data from the PG County API along with adding and deleting crime incidents in the database. These endpoints can be found primarily in server.js, and utilize mongoose to build a database. 
 
 
 ### GET
 
-The get endpoint is meant to retrieve data from the PG County API, with said data usually being in the form of JSON (the URL the get endpoint links to should have “.json” at the end of it). Some of the utility of the get endpoint can be circumvented in the post endpoint if coded properly, but the get request is still useful for retrieving data. In the get endpoint, a console statement such as “get request detected” is output if the get request is valid. The sql endpoint works much the same way. 
+The get endpoint is meant to retrieve data from the PG County API database, with said data usually being in the form of JSON (the URL the get endpoint links to should have “.json” at the end of it). In the get endpoint, a statement such as “Hello, welcome to CrimeSurge's API” is output if the get request is valid. 
 
 
 ### POST
 
-The post endpoint sends data to our server, usually in the form of a map or a graph for crime hotspots and statistics. The api post endpoint utilizes a constant that stores the data from the site with an “await fetch(url)” call. That constant’s data is then stored into another constant as a JSON object, with the second constant then being sent as a JSON response. The endpoint also outputs a few messages to the log to ensure the post request is working, such as “‘fetch request data’, json”, that developers can check in their local instance. 
-
-The SQL post endpoint works a bit differently in order to work with a stored database. This endpoint will first print out a message to the log to ensure the get endpoint’s code is working properly, and then proceeds to open the initial database created. After that, the database runs a query that returns the crime statistics categorized. 
-
+The post endpoint sends data to our server, usually in the form of a map or a graph for crime hotspots and statistics. Post requests can also update the database we have created, allowing the database to be updated automatically or manually if need be. Whenever something utilizes the post endpoint, a message is sent in the form of “I received your POST request. This is what you sent me: [data]”. The endpoint also outputs a few messages to the log to ensure the post request is working, such as the body of the request (req.body). 
 
 ### PUT
 
-The put request is the only API endpoint that is missing, due to most of its functionality being fulfilled by the post request. 
+The put request deletes an incident from the server, allowing crimes that may have been misinput to be deleted and resubmitted with a post request. Whenever a put request is submitted, a message is sent in the form of “Your PUT request has been received. This is what you deleted: [data]”. Like the other requests, a short console statement is output, such as “Deletion Completed”. 
 
 
 ## Known Bugs and Future Development

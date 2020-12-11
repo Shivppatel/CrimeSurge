@@ -1,6 +1,7 @@
 import React from "react";
 import { MapContainer, ContentTitle } from "./MapElements";
 import GoogleMapReact from "google-map-react";
+
 import MarkerImage from '../../images/marker.png'
 class Map extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class Map extends React.Component {
       }
     }
   }
-
+  
   render() {
     const crimeList = this.state.data;
 

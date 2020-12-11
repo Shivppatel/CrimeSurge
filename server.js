@@ -24,7 +24,7 @@ mongoose.set("useFindAndModify", false);
 
 // API calls
 app.get("/api", (req, res) => {
-  res.send("Hello welcome to CrimeSurge's API");
+  res.send("Hello, welcome to CrimeSurge's API");
 });
 
 app.get("/api/incident-data", async (req, res) => {
