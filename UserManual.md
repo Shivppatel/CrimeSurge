@@ -41,7 +41,7 @@ The homepage is the first page you should see when the CrimeSurge webpage is ope
 The about page has three sections: “Our Goal”, “About Our Dataset”, and “What the Dataset Will Tell Us”. Each section has background information for the project, such as the dataset used and what the data should reveal to us and the users. The “Our Goal” section reveals what we hope to achieve with this dataset and website. The “About Our Dataset” section describes where we got our data from and the key data points used. The “What the Dataset Will Tell Us” portion describes what data our source gives us, such as the location and frequency of crimes. This can serve as useful background information for what the data actually is meant to show and if you may find this information personally relevant and useful. 
 
 
-### Crime Map
+## Crime Map
 
 The Crime Map is a dynamic page on our site that utilizes a heatmap. It generates points on the map using latitude and longitude data and indicates where a crime has occured. When many points are in the same location the heat map registers a red area. When a low amount of crime occurs in an area the color is green.
 
@@ -49,7 +49,7 @@ The map is laid over a Google Map-like structure, and has similar controls to a 
 
 
 
-### Statistics
+## Statistics
 
 The statistics page shows crime statistics for the PG County area. It includes dynamic graphs that update as new data is added to the dataset. This page is useful to any user looking for specific statistics on crime rates in PG county. 
 
@@ -57,6 +57,6 @@ Clicking on the button “Crimes Revealed” will display the current data the m
 
 
 
-### Documentation
+## Documentation
 
 The documentation page guides users to important pages related to Crime Surge. There are three links: “View Source Code”, “User Manual”, and “Developer Manual”. The “View Source Code” link takes the user to our Github page with all the source code to show people how the site was constructed. The User Manual (what you’re currently viewing) describes how to utilize the website and what it’s for. The Developer Manual gives developers insight on how to work with the Crime Surge site and more information about our dataset. It also shows how the site works and how to work with the application on their local machines, from installing the necessary packages to running the site locally.

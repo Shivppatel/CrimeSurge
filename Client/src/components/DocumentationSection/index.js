@@ -31,7 +31,7 @@ const Documentation = () => {
             </DocP>
           </DocCard>
         </Link>
-        <Link href="https://www.google.com">
+        <Link href="https://github.com/Shivppatel/PGC-Crime-Map/blob/main/UserManual.md">
           <DocCard>
             <DocIcon src={Icon2} />
             <DocH2>User Manual</DocH2>
