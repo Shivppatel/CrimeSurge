@@ -31,7 +31,9 @@ const Documentation = () => {
             </DocP>
           </DocCard>
         </Link>
-        <Link href="https://github.com/Shivppatel/PGC-Crime-Map/blob/main/UserManual.md">
+        <Link href="https://github.com/Shivppatel/PGC-Crime-Map/blob/main/UserManual.md"
+              target="_blank"
+              >
           <DocCard>
             <DocIcon src={Icon2} />
             <DocH2>User Manual</DocH2>
@@ -40,7 +42,9 @@ const Documentation = () => {
             </DocP>
           </DocCard>
         </Link>
-        <Link href="https://github.com/Shivppatel/PGC-Crime-Map/blob/main/DevManual.md">
+        <Link href="https://github.com/Shivppatel/PGC-Crime-Map/blob/main/DevManual.md"
+              target="_blank"
+              >
           <DocCard>
             <DocIcon src={Icon3} />
             <DocH2>Developer Manual</DocH2>
