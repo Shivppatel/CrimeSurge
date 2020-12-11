@@ -4,9 +4,10 @@ export const MapContainer = styled.div`
   background: #a3c2f0;
   justify-content: center;
   align-items: center;
-  height: 92vh;
+  height: 95vh;
   position: relative;
   z-index: 1;
+  padding:30px;
 `;
 
 export const ContentTitle = styled.h1`

@@ -141,7 +141,7 @@ class Map extends React.Component {
                   ),
                   weight: 3,
                 })),
-                radius: 20,
+                radius: 15,
               });
               heatmap.setMap(map);
               crimeList?.forEach((point) => {
@@ -179,11 +179,9 @@ class Map extends React.Component {
             }}
           ></GoogleMapReact>
         ) : (
-          <MapContainer id="map">
             <ContentTitle>
               Sorry we had a problem retrieving the crime data...
             </ContentTitle>
-          </MapContainer>
         )}
       </MapContainer>
     );
