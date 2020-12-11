@@ -9,7 +9,7 @@ export const DocContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  background: #A3C2F0;
+  background: #a3c2f0;
   color: black;
   overflow-y: hidden;
 `;
@@ -78,7 +78,7 @@ export const DocIcon = styled.img`
 
 export const DocH1 = styled.h1`
   margin-bottom: 14px;
-  color: white;
+  color: #17263c;
   font-size: 2.5rem;
 
   @media screen and (max-width: 480px) {

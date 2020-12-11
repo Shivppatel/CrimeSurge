@@ -31,4 +31,8 @@ export const FooterLink = styled(LinkS)`
   text-decoration: none;
   padding: 10px 10px;
   cursor: pointer;
+
+  &:hover {
+    color: #a3c2f0;
+  }
 `;

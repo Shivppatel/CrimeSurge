@@ -28,7 +28,8 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Visualize Local Crime </HeroH1>
         <HeroP>
-        Created in an effort to increase personal safety and affect policy to lower crime rates.
+          Created in an effort to increase personal safety and affect policy to
+          lower crime rates.
         </HeroP>
         <HeroBtnWrapper>
           <Button
