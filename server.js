@@ -35,6 +35,15 @@ app.get("/api/incident-data", async (req, res) => {
   }
 });
 
+app.get("/api/incident-table", async (req, res) => {
+  try{
+  data = await incidentModel.aggregate([{ $group: { type: "ACCIDENT"}  },{ $group: { type: 1, count: { $sum: 1 } } } ]);
+  res.json(data);
+  }catch(err){
+    res.status(500).send(err);
+  }
+})
+
 app.post("/api/report-incident", async (req, res) => {
   const incident = new incidentModel(req.body);
   try {
@@ -42,6 +51,26 @@ app.post("/api/report-incident", async (req, res) => {
     res.send(incident);
   } catch (err) {
     res.status(500).send(err);
+  }
+});
+
+app.put("/api/update-incident", async (req, res) => {
+  const query = req.body['query'];
+  const update = req.body['update'];
+  console.log(query, update);
+  try{
+    const response = await incidentModel.updateOne(query, update);
+   res.send(req.body['update']);
+  } catch(err){
+    res.status(500).send(err, req.body);
+  }
+})
+app.delete("/api/delete-incident", async (req, res) => {
+  try{
+    const response = await incidentModel.deleteOne(req.body);
+    res.send(response)
+  } catch(err){
+    res.status(500).send(err, req.body);
   }
 });
 
