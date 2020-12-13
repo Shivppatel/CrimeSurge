@@ -4,7 +4,7 @@ export const MapContainer = styled.div`
   background: #a3c2f0;
   justify-content: center;
   align-items: center;
-  height: 92vh;
+  height: 100vh;
   position: relative;
   z-index: 1;
 `;
