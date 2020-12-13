@@ -14,6 +14,7 @@
 - [Get](#get)
 - [Post](#post)
 - [Put](#put)
+- [Delete](#delete)
 - [Known Bugs and Future Development](#known-bugs-and-future-development)
 
 ## Developer Manual Introduction
@@ -53,19 +54,23 @@ Third, if the statistics aren’t shown to be similar to the tableau version of 
 
 ## API
 
-The application mainly utilizes the get, post, and put endpoints to retrieve and post the data from the PG County API along with adding and deleting crime incidents in the database. These endpoints can be found primarily in server.js, and utilize mongoose to build a database.
+The application mainly utilizes the get, post, and put endpoints to retrieve and post the data from the PG County API along with adding and updating crime incidents in the database. There is an additional delete endpoint that helps to delete particular incidents from the database. These endpoints can be found primarily in server.js, and utilize mongoose to build a database. 
 
 ### GET
 
-The get endpoint is meant to retrieve data from the PG County API database, with said data usually being in the form of JSON (the URL the get endpoint links to should have “.json” at the end of it). In the get endpoint, a statement such as “Hello, welcome to CrimeSurge's API” is output if the get request is valid.
+The get endpoint is meant to retrieve data from the PG County API database, with said data usually being in the form of JSON. The get endpoint also sends a JSON representation of the database’s crime incidents. In the get endpoint, a statement such as “Hello, welcome to CrimeSurge's API” is output if the get request is valid. If the request is invalid, an error is thrown. The url endpoint for the get endpoint is “/api/incident-data”. 
 
 ### POST
 
-The post endpoint sends data to our server, usually in the form of a map or a graph for crime hotspots and statistics. Post requests can also update the database we have created, allowing the database to be updated automatically or manually if need be. Whenever something utilizes the post endpoint, a message is sent in the form of “I received your POST request. This is what you sent me: [data]”. The endpoint also outputs a few messages to the log to ensure the post request is working, such as the body of the request (req.body).
+The post endpoint sends data to our server to update the database we have created, allowing said database to be updated automatically or manually if need be. Whenever something utilizes the post endpoint, a message is sent in the form of the new data added to the database. The endpoint also outputs a few messages to the log to ensure the post request is working, such as the body of the request (req.body). Just like the get endpoint, an invalid request generates an error message. The url endpoint for the post endpoint is “/api/report-incident”. 
 
 ### PUT
 
-The put request deletes an incident from the server, allowing crimes that may have been misinput to be deleted and resubmitted with a post request. Whenever a put request is submitted, a message is sent in the form of “Your PUT request has been received. This is what you deleted: [data]”. Like the other requests, a short console statement is output, such as “Deletion Completed”.
+The put request updates an incident in the database, allowing crimes that may have been misinput to be updated without deleting them through a put request. Whenever a put request is submitted, a message is sent in the form of the data that was updated. The console also generates a  statement of the query that updated the data and what the update is. It will also generate an error if the request is invalid. The url endpoint for the put endpoint is “/api/update-incident”. 
+
+### DELETE
+
+The delete endpoint deletes incidents in the database that may have been invalid upon their input. It will delete the input that matches the request body, and returns a message containing what was deleted. Like the other endpoints, it will output an error message for invalid requests. The url endpoint for the delete endpoint is “/api/delete-incident”. 
 
 ## Known Bugs and Future Development
 
