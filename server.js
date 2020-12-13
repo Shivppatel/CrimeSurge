@@ -21,12 +21,53 @@ mongoose
 
 mongoose.set("useFindAndModify", false);
 
-// API calls
+//////////////API calls/////////////////
+/*Shape of expected reqeust for each end point
+  -/api/report-incident
+    - expected data shape 
+    { "type":"ASSAULT", "date":"2020/12/12", "location": {
+            "lat": "39.980818972",
+            "lng": "-76.8469380289"
+        }}
+
+  -/api/update-incident 
+    - expected data shape
+    {
+      {
+    "query": {
+        "date": "2020-12-12",
+        "type": "ASSAULT",
+        "location": {
+            "lat": "39.980818972",
+            "lng": "-76.8469380289"
+        }
+    },
+    "update": 
+    {
+        "date": "2020-12-12",
+        "type": "MURDER",
+        "location": {
+            "lat": "39.980818972",
+            "lng": "-76.8469380289"
+        }
+    }
+    }
+  
+  -/api/delete-incident
+    -expected data shape
+    { "type":"ASSAULT", "date":"2020/12/12", "location": {
+            "lat": "39.980818972",
+            "lng": "-76.8469380289"
+        }}
+ */
+
 app.get("/api", (req, res) => {
+  // Sends a basic hello respone if the root endpoint of our api is hit
   res.send("Hello, welcome to CrimeSurge's API");
 });
 
 app.get("/api/incident-data", async (req, res) => {
+  //Sends a json respersentation of all of the reported incidentes in our database
   const incidents = await incidentModel.find({});
   try {
     res.json(incidents);
@@ -35,16 +76,8 @@ app.get("/api/incident-data", async (req, res) => {
   }
 });
 
-app.get("/api/incident-table", async (req, res) => {
-  try{
-  data = await incidentModel.aggregate([{ $group: { type: "ACCIDENT"}  },{ $group: { type: 1, count: { $sum: 1 } } } ]);
-  res.json(data);
-  }catch(err){
-    res.status(500).send(err);
-  }
-})
-
 app.post("/api/report-incident", async (req, res) => {
+  //Adds an incident to our database
   const incident = new incidentModel(req.body);
   try {
     await incident.save();
@@ -55,31 +88,27 @@ app.post("/api/report-incident", async (req, res) => {
 });
 
 app.put("/api/update-incident", async (req, res) => {
-  const query = req.body['query'];
-  const update = req.body['update'];
+  //updates the details of a speciffic incident with the data provided
+  const query = req.body["query"];
+  const update = req.body["update"];
   console.log(query, update);
-  try{
+  try {
     const response = await incidentModel.updateOne(query, update);
-   res.send(req.body['update']);
-  } catch(err){
+    res.send(req.body["update"]);
+  } catch (err) {
     res.status(500).send(err, req.body);
   }
-})
+});
 app.delete("/api/delete-incident", async (req, res) => {
-  try{
+  //deletes the incident that matches the req.body
+  try {
     const response = await incidentModel.deleteOne(req.body);
-    res.send(response)
-  } catch(err){
+    res.send(response);
+  } catch (err) {
     res.status(500).send(err, req.body);
   }
 });
 
-app.post("/api/world", (req, res) => {
-  console.log(req.body);
-  res.send(
-    `I received your POST request. This is what you sent me: ${req.body.post}`
-  );
-});
 if (process.env.NODE_ENV === "production") {
   // Serve any static files
   app.use(express.static(path.join(__dirname, "Client/build")));
