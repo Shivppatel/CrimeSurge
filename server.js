@@ -67,7 +67,7 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/api/incident-data", async (req, res) => {
-  //Sends a json respersentation of all of the reported incidentes in our database
+  //Sends a json representation of all of the reported incidents in our database
   const incidents = await incidentModel.find({});
   try {
     res.json(incidents);
