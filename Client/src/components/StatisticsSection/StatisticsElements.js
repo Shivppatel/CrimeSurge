@@ -14,6 +14,7 @@ export const StatisticsContainer = styled.div`
 
 export const StatisticsWrapper = styled.img`
   min-width: 300px;
+  border-radius: 10px;
   width: 40vw;
   align-items: center;
   object-fit: contain;
