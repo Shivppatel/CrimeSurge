@@ -12,25 +12,37 @@ export const StatisticsContainer = styled.div`
   background: #2a456e;
 `;
 
-export const StatisticsWrapper = styled.div`
-  width: 98vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+export const StatisticsWrapper = styled.img`
+  min-width: 300px;
+  width: 40vw;
   align-items: center;
-  height: 75vh;
-  @media screen and (max-width: 768px) {
-    height: 70vh;
-  }
+  object-fit: contain;
 `;
 
 export const StatisticsTitle = styled.h1`
   color: white;
-  margin-bottom: 64px;
+  margin-bottom: 34px;
   font-size: 2.5rem;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
+  }
+`;
+
+export const Button = styled.button`
+  margin-top: 34px;
+  border-radius: 50px;
+  background: #a3c2f0;
+  color: #17263c;
+  white-space: nowrap;
+  padding: 8px 16px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #17263c;
+    color: white;
   }
 `;
