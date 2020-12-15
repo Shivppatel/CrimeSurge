@@ -10,19 +10,13 @@ export const AboutContainer = styled.div`
   position: relative;
   z-index: 1;
   background: #2a456e;
-  @media screen and (max-width: 768px) {
-    height: 180vh;
-  }
+
 `;
 export const AboutWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 70vh;
-  @media screen and (max-width: 768px) {
-    height: 70vh;
-  }
 `;
 
 export const AboutContent = styled.div`
@@ -53,7 +47,7 @@ export const ContentItem = styled.div`
 `;
 export const AboutTitle = styled.h1`
   color: white;
-  margin-bottom: 14px;
+  margin-bottom: 24px;
   font-size: 2.5rem;
 
   @media screen and (max-width: 480px) {

@@ -39,7 +39,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             About
           </SidebarLink>
           <SidebarLink
-            to="documentation"
+            to="map"
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -47,7 +47,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Documentation
+            Crime Map
           </SidebarLink>
           <SidebarLink
             to="statistics"
@@ -61,7 +61,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             Statistics
           </SidebarLink>
           <SidebarLink
-            to="map"
+            to="documentation"
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -69,7 +69,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Crime Map
+            Documentation
           </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
