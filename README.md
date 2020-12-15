@@ -59,9 +59,9 @@ On a political scale, the app is meant to give public officials an idea of what 
 
     - Creates an immediate data visualization of the hotspots so people can avoid them and activists and politicians can focus efforts in these areas
 
-### Target Browsers
+### Target Devices
 
-    - Our main targets are iOS devices such as Macbooks and iPhones.
+    - Our main targets are Desktops and Mobile devices such as iPhones.
 
 [![Product Name Screen Shot][product-screenshot]](https://crimesurge.herokuapp.com/)
 
@@ -71,7 +71,6 @@ On a political scale, the app is meant to give public officials an idea of what 
 - [Express](https://expressjs.com)
 - [Node.js](https://nodejs.org/en/)
 - [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
-- [ApexCharts](https://apexcharts.com/)
 
 <!-- GETTING STARTED -->
 
@@ -189,7 +188,7 @@ The map is laid over a Google Map-like structure, and has similar controls to a 
 
 The statistics page shows crime statistics for the PG County area. It includes dynamic graphs that update as new data is added to the dataset. This page is useful to any user looking for specific statistics on crime rates in PG county. 
 
-Clicking on the button “Crimes Revealed” will display the current data the map has, and clicking on the button again will “refresh” the graph with any data added between clicks. The graph displays crimes by categories, unveiling how often each crime is committed in the PG County area. Future functionality will likely add more graphs that users can shift between with arrows on the left and right of the graph. 
+Clicking on the button “Open statistics dashboard” will open a new tab displaying the current data the map has in a MongoDB dashboard. The graph displays crimes by categories, unveiling how often each crime is committed in the PG County area. Future functionality will likely add more insightfull graphs once our database gets populated with data with timestamps along with the date. 
 
 
 
