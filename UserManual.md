@@ -33,7 +33,7 @@ The sidebar mainly pops up automatically when the window is sufficiently small, 
 
 ## Home Page
 
-The homepage is the first page you should see when the CrimeSurge webpage is opened. It has a dynamic visual of traffic and a city skyline that replays indefinitely. The home page is the main page of the website and users can either utilize the scroll bar or navigation bar to go to other parts of the website. There is a link in the center of the homepage labeled “View Crime Heatmap” that serves as an additional link to the CrimeMap page. 
+The homepage is the first page you should see when the CrimeSurge website is opened. It has a dynamic visual of traffic and a city skyline that replays indefinitely. The home page is the main page of the website and users can either utilize the scroll bar or navigation bar to go to other parts of the website. There is a link in the center of the homepage labeled “View Crime Heatmap” that serves as an additional link to the CrimeMap page. 
 
 
 ## About
