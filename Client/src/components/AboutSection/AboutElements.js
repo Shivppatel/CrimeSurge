@@ -10,6 +10,9 @@ export const AboutContainer = styled.div`
   position: relative;
   z-index: 1;
   background: #2a456e;
+  @media screen and (max-width: 768px) {
+    height: 180vh;
+  }
 `;
 export const AboutWrapper = styled.div`
   display: flex;
